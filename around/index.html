@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5.js"></script>
+	<script src="js/ie/respond.min.js"></script>
+	<![endif]-->
+	<!-- css -->
+	<link href="/css/common.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- javascript -->	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<!--	<script type="text/javascript" src="js/common.js"></script>-->
+	<!-- <script type="text/javascript" src="/js/jquery.rwdImageMaps.js"></script> -->
+</head>
+<body>
+
+<div class="gnbbox subgnb">
+	<div class="container">
+		<h1 class="col-md-4 m-tb1">
+<!--			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>-->
+			<!-- <a th:href="@{/}"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a> -->
+      <a href="/"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
+		</h1>
+
+		<div class="col-md-8 m-tb1">
+			<ul class="gnb ">
+<!--				<li><a href="atmosphere.html">대기배출농도</a></li>-->
+<!--				<li class="on"><a href="around.html">주변환경농도</a></li>-->
+<!--				<li><a href="emissions.html">대기배출량</a></li>-->
+				<!-- <li><a th:href="@{/menu1}">대기배출농도</a></li>
+				<li class="on"><a th:href="@{/menu2}">주변환경농도</a></li>
+				<li><a th:href="@{/menu3}">대기배출량</a></li> -->
+        <li><a href="/density/">대기배출농도</a></li>
+				<li class="on"><a href="/around/">주변환경농도</a></li>
+				<li><a href="/discharge/">대기배출량</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div id="app"></div>
+
+	<p class="txt_center col-point m-tb3">실시간 공개되는 대기배출농도는 한국환경공단의 확정 절차 이전 자료로 법적 증빙자료로 활용할 수 없습니다.</p>
+
+
+	<div class="bgbox p-tb3">
+		<div class="container txt_center">
+			<div class="m-t1 m-b4 font-size">
+				<h3 class="conttitle">환경기준</h3>
+				국민의 건강을 보호하고 쾌적한 환경을 조성하기 위하여 국가가 달성하고 유지하는 것이 바람직한 환경상의 조건 또는 질적인 수준을 말합니다.<br/>
+				환경기준은 그 자체가 행정상 규제 대상이 되거나 법적 구속력을 가지지 않기 때문에 환경기준의 초과가 있었다고 하더라도<br/>
+				국민이나 사업자가 직접적으로 책임지는 것은 아니나, 환경행정의 척도가 되는 환경목표로서 환경행정상 중요한 의미를 갖습니다.<br/>
+				환경기준을 초과하여 주민의 건강, 재산이나 동식물 등의 생육에 심각한 위해를 끼칠 우려가 인정될 경우 해당 지역에 대기오염 경보를 발령할 수 있습니다.
+			</div>
+		</div>
+	</div>
+
+	<div class="page-rating">
+		<div class="title txt_center"> 
+				<p class="m-b1"><img src="/images/title.png" alt=""></p>
+				<div class="people inline-block"> 
+					<dl> 
+						<dt>담당자 </dt> 
+						<dd class="col-point">환경관리부 장현수 </dd> 
+					</dl> 
+				</div> 
+				<div class="phone inline-block">
+					<dl> 
+						<dt>연락처 : </dt> 
+						<dd class="col-point">070-7713-8875 </dd> 
+					</dl> 
+				</div>
+		</div>
+
+		<div class="boxtext">
+			홈페이지의 서비스 품질 향상을 위해 만족도 조사를 실시하고 있습니다.<br/>
+			이 페이지에서 제공하는 정보에 대하여 얼마나 만족하셨습니까?
+		</div>
+
+		<div class="boxopinion">
+
+			<ul class="radio"> 
+				<li> <input type="radio" id="service1" name="stsfdgScore" value="5" checked="checked"> <label for="service1" class="star5">매우만족</label> </li> 
+				<li> <input type="radio" id="service2" name="stsfdgScore" value="4"> <label for="service2" class="star4">만족</label> </li> 
+				<li> <input type="radio" id="service3" name="stsfdgScore" value="3"> <label for="service3" class="star3">보통</label> </li> 
+				<li> <input type="radio" id="service4" name="stsfdgScore" value="2"> <label for="service4" class="star2">불만족</label> </li> 
+				<li> <input type="radio" id="service5" name="stsfdgScore" value="1"> <label for="service5" class="star1">매우불만족</label> </li> 
+			</ul>
+			<div class="opinion"> 
+				<input type="text" id="service_cn" name="cn" class="opi-text" placeholder="여러분의 소중한 의견을 남겨주세요"> 
+				<label for="service_cn" class="hidden">텍스트 입력 등록</label> 
+				<input type="submit" id="opi1" value="등록" class="opi-submit"> 
+				<label for="opi1" class="hidden">의견등록</label> 
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+</div>
+
+
+<div class="footer">
+	<div class="container overflow_h p-tb3">
+		<div class="col-md-6 font_light">
+			<p><img src="/images/logo.png" alt="한국남부발전(주)" class="img-fluid"></p>
+			<p class="m-t1">부산광역시 남구 문현금융로 40(문현동, 부산국제금융센터)</p>
+			<p><span class="col-point">대표전화</span>  070-7713-8000 &nbsp;&nbsp;&nbsp;&nbsp;<span class="col-point">팩스</span>  070-7713-8272</p>
+		</div>
+		<div class="col-md-6 txt_right">
+			<div class="txt_right m-t1">
+				<select class="fselect" onchange="window.open(value,'_blank');">      
+					<option value="none">관련사이트</option>
+					<option value="https://9988.kospo.co.kr/">동반성장 통합플랫폼</option>
+					<option value="https://conrps.kospo.co.kr/service/main">REC 대금지급 요청</option>
+					<option value="https://cokorims.kospo.co.kr/">연구과제 공모</option>
+					<option value="https://easyu.kospo.co.kr/">통합기자재 공급자관리</option>
+					<option value="https://easyu.kospo.co.kr/matuser/">발전정비 공급자관리</option>
+					<option value="https://eqs.kospo.co.kr:8445/">안전품질 협업</option>
+					<option value="https://withu.ewp.co.kr:8443/">정비적격통합관리</option>
+					<option value="https://cert.kospo.co.kr/cert_login.jsp">실적증명관리</option>
+				</select>
+
+				<select class="fselect m-l1" onchange="window.open(value,'_blank');">    
+					<option value="none">전력그룹사</option>
+					<option value="http://www.kepco.co.kr/">한국전력공사</option>
+					<option value="http://www.khnp.co.kr/">한국수력원자력</option>
+					<option value="http://www.koenergy.kr/">한국남동발전</option>
+					<option value="http://www.komipo.co.kr/">한국중부발전</option>
+					<option value="https://www.iwest.co.kr">한국서부발전</option>
+					<option value="https://www.kospo.co.kr">한국남부발전</option>
+					<option value="http://www.ewp.co.kr">한국동서발전</option>
+					<option value="http://www.kpx.or.kr/">전력거래소</option>
+					<option value="http://www.kepri.re.kr/">전력연구원</option>
+					<option value="http://www.genco.kr/">발전회사협력본부</option>
+					<option value="http://www.kpli.co.kr/">발전교육원</option>
+				</select>
+			</div>
+			<p class="font-small col-gray-700 m-t1">Copyright 2022. KOREA SOUTHERN POWER CO.,LTD(KOSPO). All Right Reserved</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>around</h1>
+    <div id="app"></div>
+    <script type="module" src="/around/main.js"></script>
+  </body>
+</html> -->

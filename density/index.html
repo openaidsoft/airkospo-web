@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5.js"></script>
+	<script src="js/ie/respond.min.js"></script>
+	<![endif]-->
+	<!-- css -->
+	<link href="/css/common.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- javascript -->	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<!--	<script type="text/javascript" src="js/common.js"></script>-->
+	<!-- <script type="text/javascript" src="/js/jquery.rwdImageMaps.js"></script> -->
+</head>
+<body>
+
+<div class="gnbbox subgnb">
+	<div class="container">
+		<h1 class="col-md-4 m-tb1">
+<!--			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>-->
+			<!-- <a th:href="@{/}"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a> -->
+      <a href="/"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
+		</h1>
+
+		<div class="col-md-8 m-tb1">
+			<ul class="gnb ">
+<!--				<li class="on"><a href="atmosphere.html">대기배출농도</a></li>-->
+<!--				<li><a href="around.html">주변환경농도</a></li>-->
+<!--				<li><a href="emissions.html">대기배출량</a></li>-->
+				<!-- <li class="on"><a th:href="@{/menu1}">대기배출농도</a></li>
+				<li><a th:href="@{/menu2}">주변환경농도</a></li>
+				<li><a th:href="@{/menu3}">대기배출량</a></li> -->
+        <li class="on"><a href="/density/">대기배출농도</a></li>
+				<li><a href="/around/">주변환경농도</a></li>
+				<li><a href="/discharge/">대기배출량</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+  <div id="app">
+	<!-- <ul class="overflow_h subtab">
+		<li class="on"><a href="">신인천<span class="br"> 빛드림본부</a></li>
+		<li><a href="">영월<span class="br"> 빛드림본부</a></li>
+		<li><a href="">안동<span class="br"> 빛드림본부</a></li>
+		<li><a href="">삼척<span class="br"> 빛드림본부</a></li>
+		<li><a href="">부산<span class="br"> 빛드림본부</a></li>
+		<li><a href="">하동<span class="br"> 빛드림본부</a></li>
+		<li><a href="">남제주<span class="br"> 빛드림본부</a></li>
+		<li><a href="">한림<span class="br"> 빛드림본부</a></li>
+	</ul>
+
+	<h2 class="clear_b txt_center m-tb3">신인천 빛드림본부</h2>
+
+	<div class="tablebox ">
+		<table class="basictable">
+		  <thead>
+			<tr>
+			  <th rowspan="2">호기</th>
+			  <th rowspan="2">연료</th>
+			  <th colspan="2">질소산화물<br/>(NOx,ppm)</th>
+			  <th rowspan="2">운전현황</th>
+			  <th rowspan="2">전송시각</th>
+			</tr>
+			<tr>
+			  <td>배출기준</td>
+			  <td>배출농도</td>
+			</tr>
+		</thead>  
+		<tbody>
+			<tr>
+			  <td>1 호기</td>
+			  <td>LNG</td>
+			  <td>34</td>
+			  <td>-</td>
+			  <td>정지</td>
+			  <td>2022.11.30  11:30</td>
+			</tr>
+			<tr>
+			  <td>1 호기</td>
+			  <td>LNG</td>
+			  <td>34</td>
+			  <td>-</td>
+			  <td>정지</td>
+			  <td>2022.11.30  11:30</td>
+			</tr>
+		  </tbody>
+		</table>
+	</div> -->
+  </div>
+
+	<p class="txt_center col-point m-tb3">실시간 공개되는 대기배출농도는 한국환경공단의 확정 절차 이전 자료로 법적 증빙자료로 활용할 수 없습니다.</p>
+
+
+	<div class="bgbox p-tb3">
+		<div class="container txt_center">
+			<div class="m-t1 m-b4 font-size">
+				<h3 class="conttitle">대기배출허용기준</h3>
+				대기환경보호를 위해 다양한 법들이 존재하며 주로 대기환경보전법과 환경오염시설법이 그 대표적인 예입니다.<br/>
+				남부발전은 사업소별 지역과 특성에 따라 대기배출허용기준이 규정되어 있으며 실시간 굴뚝자동측정기기(TMS)를 통해 기준 준수를 위해 노력하고 있습니다.
+			</div>
+		</div>
+	</div>
+
+	<div class="page-rating">
+		<div class="title txt_center"> 
+				<p class="m-b1"><img src="/images/title.png" alt=""></p>
+				<div class="people inline-block"> 
+					<dl> 
+						<dt>담당자 </dt> 
+						<dd class="col-point">환경관리부 장현수 </dd> 
+					</dl> 
+				</div> 
+				<div class="phone inline-block">
+					<dl> 
+						<dt>연락처 : </dt> 
+						<dd class="col-point">070-7713-8875 </dd> 
+					</dl> 
+				</div>
+		</div>
+
+		<div class="boxtext">
+			홈페이지의 서비스 품질 향상을 위해 만족도 조사를 실시하고 있습니다.<br/>
+			이 페이지에서 제공하는 정보에 대하여 얼마나 만족하셨습니까?
+		</div>
+
+		<div class="boxopinion">
+
+			<ul class="radio"> 
+				<li> <input type="radio" id="service1" name="stsfdgScore" value="5" checked="checked"> <label for="service1" class="star5">매우만족</label> </li> 
+				<li> <input type="radio" id="service2" name="stsfdgScore" value="4"> <label for="service2" class="star4">만족</label> </li> 
+				<li> <input type="radio" id="service3" name="stsfdgScore" value="3"> <label for="service3" class="star3">보통</label> </li> 
+				<li> <input type="radio" id="service4" name="stsfdgScore" value="2"> <label for="service4" class="star2">불만족</label> </li> 
+				<li> <input type="radio" id="service5" name="stsfdgScore" value="1"> <label for="service5" class="star1">매우불만족</label> </li> 
+			</ul>
+			<div class="opinion"> 
+				<input type="text" id="service_cn" name="cn" class="opi-text" placeholder="여러분의 소중한 의견을 남겨주세요"> 
+				<label for="service_cn" class="hidden">텍스트 입력 등록</label> 
+				<input type="submit" id="opi1" value="등록" class="opi-submit"> 
+				<label for="opi1" class="hidden">의견등록</label> 
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+</div>
+
+
+<div class="footer">
+	<div class="container overflow_h p-tb3">
+		<div class="col-md-6 font_light">
+			<p><img src="/images/logo.png" alt="한국남부발전(주)" class="img-fluid"></p>
+			<p class="m-t1">부산광역시 남구 문현금융로 40(문현동, 부산국제금융센터)</p>
+			<p><span class="col-point">대표전화</span>  070-7713-8000 &nbsp;&nbsp;&nbsp;&nbsp;<span class="col-point">팩스</span>  070-7713-8272</p>
+		</div>
+		<div class="col-md-6 txt_right">
+			<div class="txt_right m-t1">
+				<select class="fselect" onchange="window.open(value,'_blank');">      
+					<option value="none">관련사이트</option>
+					<option value="https://9988.kospo.co.kr/">동반성장 통합플랫폼</option>
+					<option value="https://conrps.kospo.co.kr/service/main">REC 대금지급 요청</option>
+					<option value="https://cokorims.kospo.co.kr/">연구과제 공모</option>
+					<option value="https://easyu.kospo.co.kr/">통합기자재 공급자관리</option>
+					<option value="https://easyu.kospo.co.kr/matuser/">발전정비 공급자관리</option>
+					<option value="https://eqs.kospo.co.kr:8445/">안전품질 협업</option>
+					<option value="https://withu.ewp.co.kr:8443/">정비적격통합관리</option>
+					<option value="https://cert.kospo.co.kr/cert_login.jsp">실적증명관리</option>
+				</select>
+
+				<select class="fselect m-l1" onchange="window.open(value,'_blank');">    
+					<option value="none">전력그룹사</option>
+					<option value="http://www.kepco.co.kr/">한국전력공사</option>
+					<option value="http://www.khnp.co.kr/">한국수력원자력</option>
+					<option value="http://www.koenergy.kr/">한국남동발전</option>
+					<option value="http://www.komipo.co.kr/">한국중부발전</option>
+					<option value="https://www.iwest.co.kr">한국서부발전</option>
+					<option value="https://www.kospo.co.kr">한국남부발전</option>
+					<option value="http://www.ewp.co.kr">한국동서발전</option>
+					<option value="http://www.kpx.or.kr/">전력거래소</option>
+					<option value="http://www.kepri.re.kr/">전력연구원</option>
+					<option value="http://www.genco.kr/">발전회사협력본부</option>
+					<option value="http://www.kpli.co.kr/">발전교육원</option>
+				</select>
+			</div>
+			<p class="font-small col-gray-700 m-t1">Copyright 2022. KOREA SOUTHERN POWER CO.,LTD(KOSPO). All Right Reserved</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>density</h1>
+    <div id="app"></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html> -->

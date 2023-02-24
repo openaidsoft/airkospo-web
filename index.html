@@ -1,4 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- <html lang="ko" xmlns:th="http://www.thymeleaf.org"> -->
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5.js"></script>
+	<script src="js/ie/respond.min.js"></script>
+	<![endif]-->
+	<!-- css -->
+	<link href="/css/common.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- javascript -->	
+	<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>  -->
+<!--	<script type="text/javascript" src="js/common.js"></script>-->
+<!-- <script src="//code.jquery.com/jquery-1.12.4.min.js"></script> -->
+
+	<!-- <script type="text/javascript" src="/js/jquery.rwdImageMaps.js"></script> -->
+  
+</head>
+<body>
+
+<div class="gnbbox">
+	<div class="container">
+		<h1 class="col-md-4 m-tb1">
+<!--			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>-->
+			<!-- <a th:href="@{/}"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a> -->
+      <a href="/"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
+		</h1>
+
+		<div class="col-md-8 m-tb1">
+			<ul class="gnb ">
+				<!-- <li><a href="atmosphere.html">대기배출농도</a></li>
+				<li><a href="around.html">주변환경농도</a></li>
+				<li><a href="emissions.html">대기배출량</a></li> -->
+				<!-- <li><a th:href="@{/menu1}">대기배출농도</a></li>
+				<li><a th:href="@{/menu2}">주변환경농도</a></li>
+				<li><a th:href="@{/menu3}">대기배출량</a></li> -->
+        <li><a href="/density/">대기배출농도</a></li>
+				<li><a href="/around/">주변환경농도</a></li>
+				<li><a href="/discharge/">대기배출량</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+		<div class="mobhide">
+			<div class="maintext">
+				<p class="title">Air KOSPO</p>
+				<p class="text">발전소 대기환경 정보 공개 시스템</p>
+				<p class="scroll">Scroll down</p>
+			</div>
+			<img src="images/main_pc.png" alt="" class="img-fluid" usemap="#mainMap">
+		  <map name="mainMap">
+			<area shape="rect" coords="694,908,1034,1251" href="/density/" alt="대기배출농도">
+			<area shape="rect" coords="1269,990,1620,1329" href="/around/" alt="주변환경농도">
+			<area shape="rect" coords="1799,850,2142,1166" href="/discharge/" alt="대기배출량">
+		  </map>
+		</div>
+		<div class="pchide">
+			<div class="maintext">
+				<p class="title">Air KOSPO</p>
+				<p class="text">발전소 대기환경 정보 공개 시스템</p>
+				<p class="scroll">Scroll down</p>
+			</div>
+			<img src="images/main_m.png" alt="" class="img-fluid" usemap="#mainMapmo">
+		  <map name="mainMapmo">
+			  <area shape="rect" coords="20,387,212,577" href="atmosphere.html" alt="대기배출농도">
+			  <area shape="rect" coords="325,426,507,602" href="around.html" alt="주변환경농도">
+			  <area shape="rect" coords="602,354,784,530" href="emissions.html" alt="대기배출량">
+		</map>
+		</div>
+	<script>
+	$(function(){
+		$('img[usemap]').rwdImageMaps();
+		$("#img").width("100%");
+	});
+	</script>
+</div>
+
+<div class="container txt_center m-tb3">
+누구나 쉽게 대기오염물질 배출농도 및 배출량, 발전소 주변 환경농도를 직접 확인하실 수 있습니다.<br/>
+한국남부발전은 국민에게 친환경 전력을 공급하기 위하여<br/>
+환경법규 이상의 관리기준을 수립하여 운영하고<br/>
+그 결과를 투명하게 공개함으로써 최선의 노력을 다하고 있습니다.<br/>
+</div>
+
+
+<div class="bgbox p-tb3">
+	<div class="container txt_center">
+		<div class="m-t1 m-b4">
+			<h3 class="conttitle">황산화물</h3>
+			황(S)과 산소(O)와의 화합물을 총칭하는 것으로 이산화황, 삼산화황, 황산 등이 속하며 주요 대기오염물질로서<br/>
+			산성비의 원인이 되어 건축물, 식물 등 환경에 영향을 미치거나 인체 호흡기로 흡수되어 호흡기 질환을 유발하기도 합니다.<br/>
+			주로 화석연료(석탄 등)가 연소되면서 발생하며 이를 저감하기 위해 남부발전에서는 습식 탈황설비(하동), 건식 탈황설비(삼척)를 운영하고 있습니다.
+		</div>
+		<div class="m-t1 m-b4">
+			<h3 class="conttitle">질소산화물</h3>
+			질소(N)와 산소(O)로 이루어진 화합물 또는 이들의 혼합물을 말합니다. 일산화질소, 이산화질소, 질산 등이 속하며 연소과정과 대기 상황에 따라 다양한 형태를 띱니다.<br/>
+			화합물의 종류에 따라 다른 영향을 미치지만, 특히 NO₂는 NO보다 독성이 약 5~7배 강하고 부식성과 산화력이 크며 고온에서의 산화로 발생합니다.<br/>
+			고농도 이산화질소가 인체에 노출될 경우 기관지염, 폐렴 등 호흡기 질환을 일으킬 수 있습니다.<br/>
+			대부분의 발전소에서는 주로 선택적 촉매 환원법(SCR) 설비를 도입하여 질소산화물 저감을 위해 노력하고 있습니다.
+		</div>
+		<div class="m-t1 m-b3">
+			<h3 class="conttitle">미세먼지</h3>
+			미세먼지란 대기 중에 존재하는 입자상 물질을 말하며 주로 화석연료 연소 시, 자동차 배출가스 등에서 많이 발생합니다.<br/>
+			크기에 따라 PM10(10㎛ 이하)과 PM2.5(2.5㎛ 이하)로 나뉘며 PM2.5의 경우 초미세먼지로 분류됩니다.<br/>
+			미세먼지를 다량 흡수할 경우 호흡기 질환, 각종 염증 등을 유발할 수 있으며, 특히 초미세먼지의 경우 혈관, 신경계까지 악영향을 미칠 수 있습니다.<br/>
+			남부발전에서는 미세먼지 저감을 위해 전기집진기(EP), 살수차 운영, 비산먼지 저감 시설 등을 운영하고 있으며 중장기목표 설정을 통해 지속적인 감축 노력을 시행 중입니다.
+		</div>
+	</div>
+</div>
+
+<div class="container overflow_h m-tb3">
+	<h2 class="txt_center m-t2 m-b3">전국 빛드림 본부</h2>
+	<div class="container-fluid  row">
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/01.jpg" alt="" class="img-fluid">
+				<p class="btn">신인천빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/02.jpg" alt="" class="img-fluid">
+				<p class="btn">영월빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/03.jpg" alt="" class="img-fluid">
+				<p class="btn">삼척빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/04.jpg" alt="" class="img-fluid">
+				<p class="btn">안동빛드림본부</p>
+			</a>
+		</div>
+	</div>
+	<div class="container-fluid  row">
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/05.jpg" alt="" class="img-fluid">
+				<p class="btn">부산빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/06.jpg" alt="" class="img-fluid">
+				<p class="btn">하동빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/07.jpg" alt="" class="img-fluid">
+				<p class="btn">남제주빛드림본부</p>
+			</a>
+		</div>
+		<div class="col-sm-3 mainbtn m-t2">
+			<a href="">
+				<img src="images/08.jpg" alt="" class="img-fluid">
+				<p class="btn">한림빛드림본부</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container overflow_h p-tb3">
+		<div class="col-md-6 font_light">
+			<p><img src="images/logo.png" alt="한국남부발전(주)" class="img-fluid"></p>
+			<p class="m-t1">부산광역시 남구 문현금융로 40(문현동, 부산국제금융센터)</p>
+			<p><span class="col-point">대표전화</span>  070-7713-8000 &nbsp;&nbsp;&nbsp;&nbsp;<span class="col-point">팩스</span>  070-7713-8272</p>
+		</div>
+		<div class="col-md-6 txt_right">
+			<div class="txt_right m-t1">
+				<select class="fselect" onchange="window.open(value,'_blank');">      
+					<option value="none">관련사이트</option>
+					<option value="https://9988.kospo.co.kr/">동반성장 통합플랫폼</option>
+					<option value="https://conrps.kospo.co.kr/service/main">REC 대금지급 요청</option>
+					<option value="https://cokorims.kospo.co.kr/">연구과제 공모</option>
+					<option value="https://easyu.kospo.co.kr/">통합기자재 공급자관리</option>
+					<option value="https://easyu.kospo.co.kr/matuser/">발전정비 공급자관리</option>
+					<option value="https://eqs.kospo.co.kr:8445/">안전품질 협업</option>
+					<option value="https://withu.ewp.co.kr:8443/">정비적격통합관리</option>
+					<option value="https://cert.kospo.co.kr/cert_login.jsp">실적증명관리</option>
+				</select>
+
+				<select class="fselect m-l1" onchange="window.open(value,'_blank');">    
+					<option value="none">전력그룹사</option>
+					<option value="http://www.kepco.co.kr/">한국전력공사</option>
+					<option value="http://www.khnp.co.kr/">한국수력원자력</option>
+					<option value="http://www.koenergy.kr/">한국남동발전</option>
+					<option value="http://www.komipo.co.kr/">한국중부발전</option>
+					<option value="https://www.iwest.co.kr">한국서부발전</option>
+					<option value="https://www.kospo.co.kr">한국남부발전</option>
+					<option value="http://www.ewp.co.kr">한국동서발전</option>
+					<option value="http://www.kpx.or.kr/">전력거래소</option>
+					<option value="http://www.kepri.re.kr/">전력연구원</option>
+					<option value="http://www.genco.kr/">발전회사협력본부</option>
+					<option value="http://www.kpli.co.kr/">발전교육원</option>
+				</select>
+			</div>
+			<p class="font-small col-gray-700 m-t1">Copyright 2022. KOREA SOUTHERN POWER CO.,LTD(KOSPO). All Right Reserved</p>
+			<p th:text="${test}"></p>
+		</div>
+	</div>
+</div>
+
+
+<!-- <script src="//code.jquery.com/jquery-1.12.4.min.js"></script> -->
+<script type="module" src="/js/jquery-1.12.4.min.js"></script>
+	<script type="module" src="/js/jquery.rwdImageMaps.js"></script>
+<script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.gnbbox' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.gnbbox' ).addClass( 'gnbFixed' );
+          }
+          else {
+            $( '.gnbbox' ).removeClass( 'gnbFixed' );
+          }
+        });
+      } );
+</script>
+
+
+
+<!-- <script type="module" src="main.js"></script> -->
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,7 +249,13 @@
     <title>Vite App</title>
   </head>
   <body>
+    <h1>index</h1>
+    <ul>
+      <li><a href="/density">대기배출농도</a></li>
+      <li><a href="/around">주변환경농도</a></li>
+      <li><a href="/discharge">대기배출량</a></li>
+    </ul>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
-</html>
+</html> -->
