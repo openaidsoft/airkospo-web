@@ -28,7 +28,7 @@ export default defineConfig({
   },
   build: {
     emptyOutDir: true,
-    outDir: '../airkospo/src/main/resources/static/',
+    // outDir: '../airkospo/src/main/resources/static/',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
